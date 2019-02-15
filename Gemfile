@@ -7,8 +7,12 @@ gem 'sass-rails'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'uglifier'
 gem 'bootsnap'
+gem 'puma'
+gem 'turbolinks'
 
 gem 'sqlite3', '~>1.3.6'
+gem 'faker'
+gem 'rails-controller-testing'
 
 group :development, :test do
   gem 'rack_session_access'
