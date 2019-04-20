@@ -25,7 +25,7 @@
       //prevent form from submitting the default way
       event.preventDefault();
       var values = $(this).serialize();
-      var product = $.product('/products', values);
+      var product = $.product('/products/new', values);
       product.done(function(data)) {
         $("#productName").text(product["name"]);
         $("#productDescription").text(product["description"]);
