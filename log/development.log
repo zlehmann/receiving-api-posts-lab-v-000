@@ -1773,3 +1773,11 @@ Processing by ProductsController#create as HTML
 Completed 200 OK in 122ms (Views: 112.7ms | ActiveRecord: 5.7ms)
 
 
+Started GET "/products/new" for 69.112.224.82 at 2019-04-20 13:19:16 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
