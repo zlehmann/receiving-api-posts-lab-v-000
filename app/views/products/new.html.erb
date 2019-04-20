@@ -14,6 +14,11 @@
   <%= f.submit "submit" %>
 <% end %>
 
+<div id="productResult">
+  <h2 id="productName"></h2>
+  <p id="productDescription"></p>
+</div>
+
 <script type="text/javascript" charset="utf-8">
   $(function () {
     $('form').submit(function(event) {
@@ -22,7 +27,8 @@
       var values = $(this).serialize();
       var product = $.product('/products', values);
       product.done(function(data)) {
-
+        $("#productName").text(product["name"]);
+        $("#productDescription").text(product["description"]);
       });
     });
   });
