@@ -15,15 +15,14 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
-    respond_to do |format|
-      format.html { render :new }
-      format.json { render json: @product }
-    end
   end
 
   def create
     @product = Product.create(product_params)
-    render json: @product
+    respond_to do |format|
+      format.html { render :new }
+      format.json { render json: @product }
+    end
   end
 
   def show
