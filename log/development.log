@@ -1703,3 +1703,7 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 41ms (Views: 21.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/products/new" for 69.112.224.82 at 2019-04-20 12:53:27 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
