@@ -1711,3 +1711,10 @@ Processing by ProductsController#new as HTML
 Completed 200 OK in 1751ms (Views: 1718.8ms | ActiveRecord: 2.5ms)
 
 
+Started POST "/products" for 69.112.224.82 at 2019-04-20 12:53:41 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ssRZKFIpenQ6aKei2Hzpt3sH4VEAutY6dgzxFTuf4VQcxmKfnrjlkkHBxB+Trh6xSwphna+mq9gFNaV5qpKokg==", "product"=>{"name"=>"test", "price"=>"13", "description"=>"a thing i made", "inventory"=>"5"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["price", 13], ["created_at", "2019-04-20 12:53:41.132459"], ["updated_at", "2019-04-20 12:53:41.132459"], ["inventory", 5], ["description", "a thing i made"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
