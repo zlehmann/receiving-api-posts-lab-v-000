@@ -1718,3 +1718,8 @@ Processing by ProductsController#create as HTML
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["price", 13], ["created_at", "2019-04-20 12:53:41.132459"], ["updated_at", "2019-04-20 12:53:41.132459"], ["inventory", 5], ["description", "a thing i made"]]
   [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 22]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (65.75ms)
+Completed 201 Created in 128ms (Views: 118.7ms | ActiveRecord: 5.3ms)
+
+
