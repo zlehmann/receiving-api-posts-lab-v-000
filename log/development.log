@@ -1886,3 +1886,13 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 351ms (Views: 314.4ms | ActiveRecord: 3.0ms)
 
 
+Started GET "/products/20" for 69.112.224.82 at 2019-04-20 13:27:33 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.7ms)
+
+
