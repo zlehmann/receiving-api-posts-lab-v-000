@@ -16,6 +16,7 @@
 
 <div id="productResult">
   <h2 id="productName"></h2>
+  <p id="productPrice"></p>
   <p id="productDescription"></p>
 </div>
 
@@ -29,6 +30,7 @@
       posting.done(function(data)) {
         var product = data;
         $("#productName").text(product["name"]);
+        $("#productPrice").text(product["price"]);
         $("#productDescription").text(product["description"]);
       });
     });
