@@ -2106,3 +2106,15 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/products/11" for 69.112.224.82 at 2019-04-20 13:29:55 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=11):
+  
+app/controllers/products_controller.rb:26:in `show'
