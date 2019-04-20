@@ -1876,3 +1876,5 @@ Processing by ProductsController#create as */*
 Completed 200 OK in 35ms (Views: 28.3ms | ActiveRecord: 3.2ms)
 
 
+Started GET "/products" for 69.112.224.82 at 2019-04-20 13:27:27 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
