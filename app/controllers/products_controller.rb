@@ -18,6 +18,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html { render :new }
       format.json { render json: @product }
+    end
   end
 
   def create
