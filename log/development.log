@@ -1723,3 +1723,8 @@ Processing by ProductsController#create as HTML
 Completed 201 Created in 128ms (Views: 118.7ms | ActiveRecord: 5.3ms)
 
 
+Started GET "/products/new" for 69.112.224.82 at 2019-04-20 13:10:09 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
