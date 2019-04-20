@@ -27,7 +27,6 @@
       event.preventDefault();
       var values = $(this).serialize();
       var posting = $.post('/products', values);
-      debugger
       posting.done(function(data)) {
         var product = data;
         $("#productName").text(product["name"]);
