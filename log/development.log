@@ -2156,3 +2156,5 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/products/15" for 69.112.224.82 at 2019-04-20 13:33:44 +0000
+Cannot render console from 69.112.224.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
